@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    background-color: #ddd;
+}
+
+#content {
+    background-color: white;
+    max-width: 700px;
+    border: 1px solid darkgray;
+    margin: 50px auto;
+    padding: 40px 120px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+h3 {
+    color: #057dce;
+    font-size: .9em;
+    letter-spacing: 2px;
+}
+p, ol {
+    line-height: 1.3em;
+    font-size: .97em;
+}
+li {
+    margin: 13px 0;
+}
+#italic-line {
+    font-style: italic;
+}
+img {
+    width: 25%;
+    display: block;
+    margin: 50px auto 0;
+}
