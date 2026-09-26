@@ -4,11 +4,10 @@
 }
 
 body {
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 #content {
-    background-color: white;
     max-width: 700px;
     border: 1px solid darkgray;
     margin: 50px auto;
@@ -37,4 +36,9 @@ img {
     width: 25%;
     display: block;
     margin: 50px auto 0;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
 }
