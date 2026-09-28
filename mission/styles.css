@@ -14,10 +14,10 @@ body {
     padding: 40px 120px;
 }
 
-h1, h3 {
+h1, h2 {
     text-align: center;
 }
-h3 {
+h2 {
     color: #057dce;
     font-size: .9em;
     letter-spacing: 2px;
@@ -28,9 +28,6 @@ p, ol {
 }
 li {
     margin: 13px 0;
-}
-#italic-line {
-    font-style: italic;
 }
 img {
     width: 25%;
