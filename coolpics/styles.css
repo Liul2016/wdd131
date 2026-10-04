@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #437dd9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    display: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+main {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Note: Rather than setting width and height, I use aspect-
+   ratio with width so that images can shrink to fit the page 
+   better when screen width gets lower using max-width while
+   still maintaining square shape */
+img {
+    aspect-ratio: 1/1;
+    width: 300px;
+    max-width: 95%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: #fff 5px solid;
+    box-shadow: 5px 5px 5px #000;
+}
+
+footer {
+    background-color: #437dd9;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-btn {
+        display: none;
+    }
+    nav a {
+        display: inline;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
