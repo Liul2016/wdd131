@@ -51,6 +51,7 @@ nav a:focus-visible {
 .book {
     display: grid;
     grid-template-columns: 1fr auto;
+    padding: 30px 0;
 }
 
 .book-info {
@@ -101,5 +102,11 @@ footer {
         grid-row: 1;
         grid-column: 2;
         padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .book-description {
+        max-width: 65%;
     }
 }
