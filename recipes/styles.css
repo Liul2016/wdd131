@@ -46,7 +46,8 @@ h1, h2 {
 #search-bar input {
     border: none;
     outline: none;
-    padding-left: 5px;
+    padding: 3px 5px;
+    border-right: 1px solid #000;
     width: 100%;
 }
 #search-bar button {
@@ -55,7 +56,6 @@ h1, h2 {
     justify-content: center;
     padding: 2px;
     border: none;
-    border-left: 1px solid #000;
     background: white;
     cursor: pointer;
 }
@@ -74,18 +74,13 @@ hr {
     border: 2px solid #000;
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 20px;
 }
 .card img {
     width: 100%;
 }
 .label {
-    border:#ccc 1px solid;
-    border-radius: 5px;
-    background-color: #efefef;
-    width: fit-content;
     padding: 2px 5px;
-    margin: 10px 0 30px 0;
+    margin: 10px 0;
 }
 .card h2 {
     color: #1586d9;
@@ -130,6 +125,9 @@ footer {
     }
     .card-info > * {
         margin: 10px 0;
+    }
+    .label {
+        margin: 0;
     }
     .description {
         display: block;

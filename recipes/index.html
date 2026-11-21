@@ -18,6 +18,7 @@
               crossorigin="anonymous" 
               referrerpolicy="no-referrer">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
 
         <!-- Open Graph (Facebook, LinkedIn, etc.) -->
         <meta property="og:type" content="website">
@@ -47,37 +48,41 @@
                 <img src="images/recipebook-icon.png" alt="RecipeBook Icon">
                 <h1>RecipeBook</h1>
             </div>
-            <form id="search-bar">
-                <input type="search" placeholder="Find a recipe" aria-label="Find a recipe">
-                <button type="submit" aria-label="Search">
+            <div id="search-bar">
+                <input id="search" type="search" placeholder="Find a recipe" aria-label="Find a recipe">
+                <button id="searchButton" type="submit" aria-label="Search">
                     <img src="images/search.svg" alt="">
                 </button>
-            </form>
+            </div>
             <hr>
         </header>
 
         <main>
-            <div class="card">
-                <img src="images/apple-crisp.jpg" alt="Apple Crisp">
-                <div class="card-info">
-                    <p class="label">dessert</p>
-                    <h2>Apple Crisp</h2>
-                    <span
-                        class="rating"
-                        role="img"
-                        aria-label="Rating: 4 out of 5 stars"
-                    >
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                    <p class="description">
-                        This apple crisp recipe is a simple yet delicious fall dessert
-                        that's great served warm with vanilla ice cream.
-                    </p>
-                </div>
+            <div id="recipeContainer">
+                <!--
+                    <div class="card">
+                        <img src="images/apple-crisp.jpg" alt="Apple Crisp">
+                        <div class="card-info">
+                            <p class="label">dessert</p>
+                            <h2>Apple Crisp</h2>
+                            <span
+                                class="rating"
+                                role="img"
+                                aria-label="Rating: 4 out of 5 stars"
+                            >
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                                <span aria-hidden="true" class="icon-star">⭐</span>
+                                <span aria-hidden="true" class="icon-star-empty">☆</span>
+                            </span>
+                            <p class="description">
+                                This apple crisp recipe is a simple yet delicious fall dessert
+                                that's great served warm with vanilla ice cream.
+                            </p>
+                        </div>
+                    </div>
+                -->
             </div>
         </main>
 
